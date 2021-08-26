@@ -7,3 +7,83 @@
 ///////////////////////////////////////////
 // Add your custom CSS/Sass styles below...
 ///////////////////////////////////////////
+.nhsuk-grid-column-two-thirds.custom-relative {
+    position: relative;
+}
+
+.custom-link {
+    position: absolute;
+    bottom: -30px;
+}
+
+// Panel
+.panel {
+    box-sizing: border-box;
+    clear: both;
+    border-left-style: solid;
+    border-color: #bfc1c3;
+    padding: 8px 16px;
+    margin-bottom: 32px;
+}
+
+.panel h1 {
+    padding: 0;
+    margin: .6em 0;
+}
+
+.panel-small {
+    border-left-style: solid;
+    border-color: #bfc1c3;
+    padding: 0 4px;
+    margin-bottom: 16px;
+}
+
+.panel-small h2 {
+    padding: 8px;
+    margin: .3em 0;
+}
+
+.panel-border-wide {
+    border-left-width: 10px;
+}
+
+.panel-border-wide.alert-info {
+    border-color: #425462;
+    background-color: #f0f4f5;
+}
+
+.panel-border-wide.alert-default {
+    border-color: #005eb8;
+    background-color: #ccdff1;
+}
+
+.panel-border-wide.alert-success {
+    border-color: #007f3b;
+    background-color: #cce5d8;
+}
+
+.panel-border-wide.alert-success-inline {
+    border-color: #007f3b;
+    background-color: #cce5d8;
+}
+
+.panel-border-wide.alert-error {
+    border-color: #d5281b;
+    background-color: #f7d4d1;
+}
+
+// End Panel
+
+
+// No Focus
+.no-focus {
+    .nhsuk-input:focus {
+        outline: none;
+        box-shadow: none;
+    }
+    .nhsuk-checkboxes__input:focus + .nhsuk-checkboxes__label::before {
+        border: 2px solid #4c6272;
+        box-shadow: none;
+    }
+}
+// End Focus

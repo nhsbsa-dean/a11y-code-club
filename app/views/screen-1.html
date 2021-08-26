@@ -1,0 +1,201 @@
+<!-- Use this page as the index for your project -->
+
+<!-- ADDING CUSTOM CSS - Add your custom CSS or Sass in /app/assets/sass/main.scss -->
+
+<!-- Extends the layout from /views/layout.html -->
+{% extends 'layout.html' %}
+<!-- 
+  In /views/layout.html you can:
+    - change the header and footer 
+    - add custom CSS and JavaScript
+-->
+
+<!-- Set the page title -->
+{% block pageTitle %}
+Accessibility Code Club
+{% endblock %}
+
+<!-- For adding a breadcrumb -->
+<!-- Code examples can be found at https://service-manual.nhs.uk/design-system/components/breadcrumbs -->
+{% block beforeContent %}
+{% endblock %}
+
+<!-- For adding a back link -->
+<!-- Code examples can be found at https://service-manual.nhs.uk/design-system/components/back-link -->
+{% block outerContent %}
+{% endblock %}
+
+<!-- For adding page content -->
+<!-- Page layout code can be found at https://service-manual.nhs.uk/design-system/styles/layout -->
+{% block content %}
+<div class="nhsuk-grid-row">
+    <div class="nhsuk-grid-column-two-thirds">
+
+        <details class="nhsuk-details nhsuk-expander">
+            <summary class="nhsuk-details__summary">
+              <span class="nhsuk-details__summary-text">
+                Instructions
+              </span>
+            </summary>
+            <div class="nhsuk-details__text">
+                <h2 class="nhsuk-heading-s nhsuk-u-padding-top-3 nhsuk-u-margin-bottom-3">Using the tools</h2>
+                <p>Use the tools you have installed on Chrome to find the issues on this screen.</p>
+                <h2 class="nhsuk-heading-s nhsuk-u-padding-top-3 nhsuk-u-margin-bottom-3">What to fix</h2>
+                <ul>
+                    <li>All errors</li>
+                    <li>2 alerts</li>
+                </ul>
+                <h2 class="nhsuk-heading-s nhsuk-u-padding-top-3 nhsuk-u-margin-bottom-3">What is the outcome</h2>
+                <p>After you have finished fixing the issues you should only have the following minor issues raised.</p>
+                <ul>
+                    <li>4 Alerts (Underlined text) raised by WAVE</li>
+                    <li>100% Accessibility by Lighthouse</li>
+                    <li>3 Needs review issues by AXE</li>
+                </ul>
+                <a href="non-fixes">Why do I not need to fix these?</a>
+            </div>
+          </details>
+          <hr>
+
+        <form action="screen-2" method="post">
+            <section>
+                <div class="nhsuk-form-group">
+                    <fieldset class="nhsuk-fieldset" aria-describedby="example-hint-1" role="group">
+                        <legend class="nhsuk-fieldset__legend nhsuk-label--l">
+                            <h1 class="nhsuk-fieldset__heading">
+                                What is your date of birth?
+                            </h1>
+                        </legend>
+                        <div class="nhsuk-hint" id="example-hint-1">
+                            For example, 15 3 1984
+                        </div>
+
+                        <div class="nhsuk-date-input" id="example">
+                            <div class="nhsuk-date-input__item">
+                                <div class="nhsuk-form-group">
+                                    <label class="nhsuk-label nhsuk-date-input__label" for="example_day">
+                                        Day
+                                    </label>
+                                    <input class="nhsuk-input nhsuk-date-input__input nhsuk-input--width-2" id="example-day"
+                                        name="example-day" type="text" pattern="[0-9]*" inputmode="numeric">
+                                </div>
+                            </div>
+                            <div class="nhsuk-date-input__item">
+                                <div class="nhsuk-form-group">
+                                    <label class="nhsuk-label nhsuk-date-input__label" for="example-month">
+                                        Month
+                                    </label>
+                                    <input class="nhsuk-input nhsuk-date-input__input nhsuk-input--width-2"
+                                        id="example-month" name="example-month" type="text" pattern="[0-9]*"
+                                        inputmode="numeric">
+                                </div>
+                            </div>
+                            <div class="nhsuk-date-input__item">
+                                <div class="nhsuk-form-group">
+                                    <span class="nhsuk-label nhsuk-date-input__label" for="example-year">
+                                        Year
+                                    </span>
+                                    <input class="nhsuk-input nhsuk-date-input__input nhsuk-input--width-4"
+                                        id="example-year" name="example-year" type="text" pattern="[0-9]*"
+                                        inputmode="numeric">
+                                </div>
+                            </div>
+                        </div>
+                    </fieldset>
+                </div>
+
+                <details class="nhsuk-details">
+                    <summary class="nhsuk-details__summary">
+                        <span class="nhsuk-details__summary-text">
+                            What is the fix
+                        </span>
+                    </summary>
+                    <div class="nhsuk-details__text">
+
+                    </div>
+                </details>
+            </section>
+            <hr>
+            <section>
+                <div class="nhsuk-form-group">
+
+                    <fieldset class="nhsuk-fieldset" aria-describedby="example-hint-2">
+                        <legend class="nhsuk-fieldset__legend nhsuk-fieldset__legend--l">
+                            <h1 class="nhsuk-fieldset__heading">
+                                How would you like to be contacted?
+                            </h1>
+                        </legend>
+
+                        <div class="nhsuk-hint" id="example-hint-2">
+                            Select all options that are relevant to you.
+                        </div>
+
+                        <div class="nhsuk-checkboxes">
+
+                            <div class="nhsuk-checkboxes__item">
+                                <input class="nhsuk-checkboxes__input" id="example-1" name="example" type="checkbox"
+                                    value="email">
+                                <label class="nhsuk-label nhsuk-checkboxes__label" for="example-1">
+                                    Email
+                                </label>
+                            </div>
+
+                            <div class="nhsuk-checkboxes__item">
+                                <input class="nhsuk-checkboxes__input" id="example-2" name="example" type="checkbox"
+                                    value="phone">
+                                <label class="nhsuk-label nhsuk-checkboxes__label" for="example-1">
+                                    Phone
+                                </label>
+                            </div>
+
+                            <div class="nhsuk-checkboxes__item">
+                                <input class="nhsuk-checkboxes__input" id="example-3" name="example" type="checkbox"
+                                    value="text message">
+                                <label class="nhsuk-label nhsuk-checkboxes__label" for="example-3">
+                                    Text message
+                                </label>
+                            </div>
+
+                        </div>
+                    </fieldset>
+
+                </div>
+                <details class="nhsuk-details">
+                    <summary class="nhsuk-details__summary">
+                        <span class="nhsuk-details__summary-text">
+                            What is the fix
+                        </span>
+                    </summary>
+                    <div class="nhsuk-details__text">
+
+                    </div>
+                </details>
+            </section>
+            <hr>
+            <section>
+                <div class="nhsuk-form-group">
+                    <h1 class="nhsuk-label-wrapper">
+                        <label class="nhsuk-label nhsuk-label--l" for="example-headiing">
+                            What is your name?
+                        </label>
+                    </h1>
+                    <input class="nhsuk-input nhsuk-input--width-20" id="example-heading" name="example-heading" type="text">
+                </div>
+                <details class="nhsuk-details">
+                    <summary class="nhsuk-details__summary">
+                        <span class="nhsuk-details__summary-text">
+                            What is the fix
+                        </span>
+                    </summary>
+                    <div class="nhsuk-details__text">
+
+                    </div>
+                </details>
+            </section>
+            <hr>
+            <button class="nhsuk-button" type="submit">Continue</button>
+        </form>
+
+    </div>
+</div>
+{% endblock %}

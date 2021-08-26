@@ -12,7 +12,7 @@
 
 <!-- Set the page title -->
 {% block pageTitle %}
-  NHS.UK prototype kit
+Accessibility Code Club
 {% endblock %}
 
 <!-- For adding a breadcrumb -->
@@ -33,57 +33,30 @@
 
       <!-- Change the page title here -->
       <h1>
-        NHS.UK prototype kit
-        <span class="nhsuk-caption-xl nhsuk-caption--bottom">Version {{version}}</span>
+        Accessibility Code Club
       </h1>
 
-      <!-- Add your content here -->
-      <!-- Styles and components can be found at https://service-manual.nhs.uk/design-system -->
+      <p class="nhsuk-body-l">In this prototype you will find accessibility issues which are common across our services, can you find them all and implement a fix.</p>
 
-      <p class="nhsuk-lede-text">
-        This kit lets you rapidly create HTML prototypes of NHS services.
-      </p>
-
-      <hr>
-
-      <h2>
-        About this page
-      </h2>
-
-      <p>
-        Use this page as the index for your project.
-      </p>
-      
-      <p>
-        You'll find the code for this page at <strong>/app/views/index.html</strong>.
-      </p>
-
-      <p>
-        There is also an <a href="/page-example">example page</a>, which contains a selection of NHS.UK frontend styles and components.
-      </p>
-
-      <hr>
-
-      <h2>
-        Get started
-      </h2>
-
-      <p>Get started by using the:</p>
-
+      <h2>Prerequisite</h2>
       <ul>
-        <li>
-          <a href="/docs/how-tos">how to guides</a>
-        </li>
-        <li>
-          <a href="/docs/page-templates">page templates</a>
-        </li>
-        <li>
-          code snippets for styles and components from the <a href="https://service-manual.nhs.uk/design-system">NHS digital service manual</a>
-        </li>
+        <li>Chrome Browser</li>
+        <li>WAVE tool, <a href="https://chrome.google.com/webstore/detail/wave-evaluation-tool/jbbplnpkjmmeebjpijfedlgcdilocofh" target="_blank">install the wave tool <span class="nhsuk-u-visually-hidden">(Opens in a new tab)</span></a></li>
+        <li>AXE tool, <a href="https://chrome.google.com/webstore/detail/axe-devtools-web-accessib/lhdoppojpmngadmnindnejefpokejbdd" target="_blank">install the axe tool <span class="nhsuk-u-visually-hidden">(Opens in a new tab)</span></a></li>
+        <li>Lighthouse, installed with Chrome browser</li>
+        <li>Voice Over (Screenreader) for macbook users</li>
+        <li>NVDA (Screenreader for windows users</li>
       </ul>
 
-      <!-- End of content -->
+      <h2>What to do</h2>
 
+      <p>For each screen you come to, there may be accessibility errors, alerts or both.
+      Use the tools listed in the prerequisite to find these.</p>
+      <p>Sometimes an accessibility issue is not raised by a tool and requires manual checking, can you spot these too.</p>
+      <p class="nhsuk-u-margin-bottom-7">Errors must be fixed, alerts should be fixed but can be passed with good reason.</p>
+
+      <a href="screen-1" class="nhsuk-button">Start now</a>
+      
     </div>
   </div>
 {% endblock %}
